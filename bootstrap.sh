@@ -22,6 +22,9 @@ case "$DISTRIBUTION" in
 		rpm -Uvh http://download.fedoraproject.org/pub/epel/$RELEASEVERSION/$BASEARCH/epel-release-$RELEASEVERSION-$EPELVERSION.noarch.rpm
 		yum install --assumeyes $REQUIREMENTS
 		;;
+	"AmazonAMI")
+		yum install --assumeyes $REQUIREMENTS
+		;;
 	"Fedora")
 		yum install --assumeyes $REQUIREMENTS
 		;;
