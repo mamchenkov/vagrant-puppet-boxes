@@ -97,7 +97,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   chef.json = { mysql_password: "foo" }
   # end
 
-  config.vm.provision :shell, path: "bootstrap.sh", args: ['minimal']
+  config.vm.provision :shell, path: "bootstrap.sh", args: ['base']
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).

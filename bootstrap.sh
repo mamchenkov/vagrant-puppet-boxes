@@ -36,8 +36,8 @@ esac
 
 if [ -z "$MANIFESTS" ]
 then
-	echo "No puppet manifests were given, assuming minimal."
-	MANIFESTS="minimal"
+	echo "No puppet manifests were given, assuming base"
+	MANIFESTS="base"
 fi
 
 rm -rf puppet-boxes
